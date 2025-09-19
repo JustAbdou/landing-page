@@ -10,10 +10,6 @@ export const footerDetails: {
     subheading: "Digitising kitchen operations for independent restaurants and small chains.",
     quickLinks: [
         {
-            text: "Features",
-            url: "#features"
-        },
-        {
             text: "Pricing",
             url: "#pricing"
         },

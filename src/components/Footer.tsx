@@ -39,31 +39,6 @@ const Footer: React.FC = () => {
                             <p className="text-blue-100 text-base sm:text-lg leading-relaxed max-w-md mb-6 sm:mb-8">
                                 {footerDetails.subheading}
                             </p>
-                            
-                            {/* Social Links with enhanced responsive design */}
-                            {footerDetails.socials && (
-                                <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
-                                    {Object.keys(footerDetails.socials).map((platformName, index) => {
-                                        if (platformName && footerDetails.socials[platformName]) {
-                                            return (
-                                                <div
-                                                    key={platformName}
-                                                    className="animate-fade-in hover:scale-110 transition-transform duration-300"
-                                                    style={{ animationDelay: `${index * 100 + 200}ms` }}
-                                                >
-                                                    <Link
-                                                        href={footerDetails.socials[platformName]}
-                                                        aria-label={platformName}
-                                                        className="bg-white/10 hover:bg-white/20 p-2 sm:p-3 rounded-xl transition-all duration-300 backdrop-blur-sm border border-white/10 hover:border-white/20"
-                                                    >
-                                                        {getPlatformIconByName(platformName)}
-                                                    </Link>
-                                                </div>
-                                            )
-                                        }
-                                    })}
-                                </div>
-                            )}
                         </div>
 
 

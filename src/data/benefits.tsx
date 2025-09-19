@@ -18,7 +18,7 @@ export const benefits: IBenefit[] = [
                 icon: <FiAlertCircle size={26} className="text-blue-600" />
             }
         ],
-        imageSrc: "/images/Fridge Temp Logs.jpg"
+        imageSrc: ""
     },
     {
         title: "Cleaning Checklists",
@@ -35,7 +35,7 @@ export const benefits: IBenefit[] = [
                 icon: <FiBookOpen size={26} className="text-blue-600" />
             }
         ],
-        imageSrc: "/images/Cleaning Checklist.png"
+        imageSrc: ""
     },
     {
         title: "Prep & Order Lists",
@@ -52,7 +52,7 @@ export const benefits: IBenefit[] = [
                 icon: <FiRepeat size={26} className="text-blue-600" />
             }
         ],
-        imageSrc: "/images/Prep Lists.png"
+        imageSrc: ""
     },
     {
         title: "Recipe Library",
@@ -69,7 +69,7 @@ export const benefits: IBenefit[] = [
                 icon: <FiBarChart2 size={26} className="text-blue-600" />
             }
         ],
-        imageSrc: "/images/Recipe Detail.jpg"
+        imageSrc: ""
     },
     {
         title: "Kitchen Handovers & No's/Low's Tracking",
@@ -86,7 +86,7 @@ export const benefits: IBenefit[] = [
                 icon: <FiAlertCircle size={26} className="text-blue-600" />
             }
         ],
-        imageSrc: "/images/Handover.jpg"
+        imageSrc: ""
     },
     {
         title: "Weekly Reports & Downloads",
@@ -98,6 +98,6 @@ export const benefits: IBenefit[] = [
                 icon: <FiBarChart2 size={26} className="text-blue-600" />
             }
         ],
-        imageSrc: "/images/Invoices Downloads.jpg"
+        imageSrc: ""
     }
 ]

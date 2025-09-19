@@ -57,25 +57,6 @@ const Stats: React.FC = () => {
                     ))}
                 </div>
 
-                {/* Enhanced Trust Indicators with better responsive design */}
-                <div className="mt-12 sm:mt-16 lg:mt-20 text-center animate-fade-in" style={{ animationDelay: '1s' }}>
-                    <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-modern border border-white/20 inline-block w-full max-w-4xl">
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 text-foreground-accent">
-                            <div className="flex items-center gap-3">
-                                <div className="w-3 h-3 bg-success rounded-full animate-pulse"></div>
-                                <span className="font-semibold text-base sm:text-lg">4.9/5 Rating</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-                                <span className="font-semibold text-base sm:text-lg">500+ Active Kitchens</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-3 h-3 bg-secondary rounded-full animate-pulse"></div>
-                                <span className="font-semibold text-base sm:text-lg">24/7 Support</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     )

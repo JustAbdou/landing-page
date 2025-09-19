@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { FiCheckCircle, FiUsers, FiSliders } from 'react-icons/fi';
+import { FiCheckCircle, FiUsers, FiSliders, FiThermometer } from 'react-icons/fi';
 import { FaStar } from 'react-icons/fa';
 
 import AppStoreButton from './AppStoreButton';
@@ -136,11 +136,38 @@ const Hero: React.FC = () => {
                     <ul className="space-y-4 sm:space-y-6 mt-4 sm:mt-6 text-center lg:text-left">
                         <li className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4">
                             <div className="bg-primary/20 p-2 sm:p-3 rounded-2xl border border-primary/10 flex-shrink-0">
+                                <FiCheckCircle className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
+                            </div>
+                            <div className="text-center lg:text-left">
+                                <span className="font-bold text-foreground text-base sm:text-lg">Recipe Library</span>
+                                <div className="text-foreground-accent text-sm sm:text-base mt-1">Access and update recipes with photos and videos.</div>
+                            </div>
+                        </li>
+                        <li className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4">
+                            <div className="bg-primary/20 p-2 sm:p-3 rounded-2xl border border-primary/10 flex-shrink-0">
+                                <FiThermometer className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
+                            </div>
+                            <div className="text-center lg:text-left">
+                                <span className="font-bold text-foreground text-base sm:text-lg">Temperature Records</span>
+                                <div className="text-foreground-accent text-sm sm:text-base mt-1">Log fridge, delivery, cooking, and reheating temperatures.</div>
+                            </div>
+                        </li>
+                        <li className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4">
+                            <div className="bg-primary/20 p-2 sm:p-3 rounded-2xl border border-primary/10 flex-shrink-0">
                                 <FiUsers className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
                             </div>
                             <div className="text-center lg:text-left">
                                 <span className="font-bold text-foreground text-base sm:text-lg">Team Activity Feed</span>
                                 <div className="text-foreground-accent text-sm sm:text-base mt-1">Know who did what, and when.</div>
+                            </div>
+                        </li>
+                        <li className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4">
+                            <div className="bg-primary/20 p-2 sm:p-3 rounded-2xl border border-primary/10 flex-shrink-0">
+                                <FiSliders className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
+                            </div>
+                            <div className="text-center lg:text-left">
+                                <span className="font-bold text-foreground text-base sm:text-lg">Prep & Order Lists</span>
+                                <div className="text-foreground-accent text-sm sm:text-base mt-1">Create, assign, and track prep and order lists for every shift.</div>
                             </div>
                         </li>
                         <li className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4">
@@ -159,24 +186,6 @@ const Hero: React.FC = () => {
                             <div className="text-center lg:text-left">
                                 <span className="font-bold text-foreground text-base sm:text-lg">Real-Time Alerts</span>
                                 <div className="text-foreground-accent text-sm sm:text-base mt-1">Get notified instantly about critical updates and issues.</div>
-                            </div>
-                        </li>
-                        <li className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4">
-                            <div className="bg-primary/20 p-2 sm:p-3 rounded-2xl border border-primary/10 flex-shrink-0">
-                                <FiCheckCircle className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
-                            </div>
-                            <div className="text-center lg:text-left">
-                                <span className="font-bold text-foreground text-base sm:text-lg">Recipe Library</span>
-                                <div className="text-foreground-accent text-sm sm:text-base mt-1">Access and update recipes with photos and videos.</div>
-                            </div>
-                        </li>
-                        <li className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4">
-                            <div className="bg-primary/20 p-2 sm:p-3 rounded-2xl border border-primary/10 flex-shrink-0">
-                                <FiSliders className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
-                            </div>
-                            <div className="text-center lg:text-left">
-                                <span className="font-bold text-foreground text-base sm:text-lg">Prep & Order Lists</span>
-                                <div className="text-foreground-accent text-sm sm:text-base mt-1">Create, assign, and track prep and order lists for every shift.</div>
                             </div>
                         </li>
                     </ul>

@@ -76,40 +76,6 @@ const Testimonials: React.FC = () => {
                     ))}
                 </div>
 
-                {/* Enhanced Trust Indicators with better responsive design */}
-                <div 
-                    className="mt-16 sm:mt-20 text-center animate-fade-in"
-                    style={{ animationDelay: '1s' }}
-                >
-                    <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-6 sm:p-8 lg:p-12 shadow-modern border border-white/20 inline-block w-full max-w-4xl">
-                        <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-6 sm:mb-8">
-                            Trusted by Industry Leaders
-                        </h3>
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-12 text-foreground-accent">
-                            <div className="flex items-center gap-3">
-                                <div className="w-3 h-3 sm:w-4 sm:h-4 bg-success rounded-full animate-pulse"></div>
-                                <div>
-                                    <div className="font-bold text-lg sm:text-xl">4.9/5</div>
-                                    <div className="text-xs sm:text-sm">Average Rating</div>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-3 h-3 sm:w-4 sm:h-4 bg-primary rounded-full animate-pulse"></div>
-                                <div>
-                                    <div className="font-bold text-lg sm:text-xl">200+</div>
-                                    <div className="text-xs sm:text-sm">Active Restaurants</div>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-3 h-3 sm:w-4 sm:h-4 bg-secondary rounded-full animate-pulse"></div>
-                                <div>
-                                    <div className="font-bold text-lg sm:text-xl">24/7</div>
-                                    <div className="text-xs sm:text-sm">Customer Support</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </section>
