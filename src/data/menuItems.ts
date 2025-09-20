@@ -2,7 +2,7 @@ import { IMenuItem } from "@/types";
 
 export const menuItems: IMenuItem[] = [
     {
-        text: "Testimonials",
-        url: "#testimonials"
+        text: "Privacy Policy",
+        url: "/privacy-policy/"
     }
 ];

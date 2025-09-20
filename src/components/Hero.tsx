@@ -1,6 +1,4 @@
-"use client";
 import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
 import { FiCheckCircle, FiUsers, FiSliders, FiThermometer } from 'react-icons/fi';
 import { FaStar } from 'react-icons/fa';
 
@@ -56,10 +54,10 @@ const Hero: React.FC = () => {
                 </div>
 
                 {/* Enhanced responsive typography */}
-                <h1 
+                <h1
                     className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground max-w-6xl mx-auto leading-tight animate-fade-in px-4"
                 >
-                    {heroDetails.heading.split(' ').map((word, i) => 
+                    {heroDetails.heading.split(' ').map((word, i) =>
                         i === heroDetails.heading.split(' ').length - 1 ? (
                             <span key={i} className="gradient-text-blue">{word}</span>
                         ) : (
@@ -67,16 +65,16 @@ const Hero: React.FC = () => {
                         )
                     )}
                 </h1>
-                
-                <p 
+
+                <p
                     className="mt-6 sm:mt-8 mx-auto leading-relaxed text-foreground-accent max-w-3xl text-lg sm:text-xl md:text-2xl animate-fade-in px-4"
                     style={{ animationDelay: '0.2s' }}
                 >
                     {heroDetails.subheading}
                 </p>
-                
+
                 {/* Enhanced rating display */}
-                <div 
+                <div
                     className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6 sm:mt-8 mb-8 sm:mb-12 animate-fade-in px-4"
                     style={{ animationDelay: '0.4s' }}
                 >
@@ -87,9 +85,9 @@ const Hero: React.FC = () => {
                     </span>
                     <span className="text-foreground-accent text-lg sm:text-xl font-semibold sm:ml-4">Rated 4.9/5 by 200+ chefs</span>
                 </div>
-                
+
                 {/* Enhanced CTA buttons with better responsive layout */}
-                <div 
+                <div
                     className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full animate-fade-in px-4"
                     style={{ animationDelay: '0.6s' }}
                 >
@@ -101,20 +99,17 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
             </div>
-            
+
             {/* Mobile-first layout for features and image */}
             <div className="mt-12 sm:mt-16 lg:mt-20 flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-12 lg:gap-16 relative z-10 px-4 sm:px-6 lg:px-8">
                 {/* Mobile: Image first, then text */}
                 <div className="lg:hidden w-full flex justify-center mb-8">
                     <div className="animate-fade-in w-full max-w-[280px] sm:max-w-[320px]">
                         <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-3 shadow-modern-lg border-4 border-gray-300 inline-block transform hover:scale-105 transition-transform duration-300 w-full">
-                            <Image
+                            <img
                                 src={heroDetails.centerImageSrc}
                                 width={280}
                                 height={210}
-                                quality={100}
-                                priority={true}
-                                unoptimized={true}
                                 alt="ChefFlow app screenshot"
                                 className="rounded-2xl w-full h-auto"
                             />
@@ -131,7 +126,7 @@ const Hero: React.FC = () => {
                         Your Kitchen,{' '}
                         <span className="gradient-text-blue">At a Glance</span>
                     </h3>
-                    
+
                     {/* Show all features on both mobile and desktop */}
                     <ul className="space-y-4 sm:space-y-6 mt-4 sm:mt-6 text-center lg:text-left">
                         <li className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4">
@@ -189,7 +184,7 @@ const Hero: React.FC = () => {
                             </div>
                         </li>
                     </ul>
-                    
+
                 </div>
                 {/* Desktop: Image on the right */}
                 <div
@@ -197,13 +192,10 @@ const Hero: React.FC = () => {
                     style={{ animationDelay: '1s' }}
                 >
                     <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-3 shadow-modern-lg border-4 border-gray-300 inline-block transform hover:scale-105 transition-transform duration-300 w-full">
-                        <Image
+                        <img
                             src={heroDetails.centerImageSrc}
                             width={250}
                             height={188}
-                            quality={100}
-                            priority={true}
-                            unoptimized={true}
                             alt="ChefFlow app screenshot"
                             className="rounded-2xl w-full h-auto"
                         />

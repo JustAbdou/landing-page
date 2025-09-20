@@ -1,6 +1,4 @@
-"use client"
 import React from "react";
-import Image from "next/image";
 
 import { testimonials } from "@/data/testimonials";
 
@@ -29,7 +27,7 @@ const Testimonials: React.FC = () => {
                 {/* Enhanced responsive grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
                     {testimonials.map((testimonial, index) => (
-                        <div 
+                        <div
                             key={testimonial.name}
                             className="group animate-fade-in hover-lift"
                             style={{ animationDelay: `${0.4 + index * 0.2}s` }}
@@ -39,15 +37,15 @@ const Testimonials: React.FC = () => {
                                 <div className="absolute top-4 sm:top-6 right-4 sm:right-6 text-primary/20 text-4xl sm:text-6xl font-bold group-hover:opacity-30 transition-opacity duration-300">
                                     "
                                 </div>
-                                
+
                                 <div className="relative z-10">
                                     <p className="text-foreground-accent text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 font-medium">
                                         "{testimonial.message}"
                                     </p>
-                                    
+
                                     <div className="flex items-center gap-3 sm:gap-4">
                                         <div className="relative">
-                                            <Image
+                                            <img
                                                 src={testimonial.avatar}
                                                 alt={testimonial.name}
                                                 width={64}
@@ -60,7 +58,7 @@ const Testimonials: React.FC = () => {
                                                 </svg>
                                             </div>
                                         </div>
-                                        
+
                                         <div className="min-w-0 flex-1">
                                             <h4 className="font-bold text-foreground text-base sm:text-lg group-hover:text-primary transition-colors duration-300 truncate">
                                                 {testimonial.name}

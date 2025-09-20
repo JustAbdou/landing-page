@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { ctaDetails } from "@/data/cta"
 
@@ -13,7 +12,7 @@ const CTA: React.FC = () => {
                     {/* Enhanced background with animated elements */}
                     <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 bg-[linear-gradient(to_right,#1a1a2e_1px,transparent_1px),linear-gradient(to_bottom,#1a1a2e_1px,transparent_1px)] bg-[size:6rem_4rem]">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_400px,#1e3a8a,transparent)]"></div>
-                        
+
                         {/* Enhanced animated background elements with better responsive positioning */}
                         <div className="absolute top-10 left-10 sm:top-20 sm:left-20 w-32 h-32 sm:w-40 sm:h-40 bg-blue-500/20 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
                         <div className="absolute bottom-10 right-10 sm:bottom-20 sm:right-20 w-32 h-32 sm:w-40 sm:h-40 bg-purple-500/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
@@ -28,13 +27,13 @@ const CTA: React.FC = () => {
                             <span className="text-xs sm:text-sm font-medium text-blue-100">Join 500+ Professional Kitchens</span>
                         </div>
 
-                        <h2 
+                        <h2
                             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 max-w-5xl mx-auto leading-tight animate-fade-in px-4"
                         >
                             {ctaDetails.heading}
                         </h2>
 
-                        <p 
+                        <p
                             className="mx-auto max-w-3xl text-lg sm:text-xl md:text-2xl text-blue-100 leading-relaxed mb-8 sm:mb-12 animate-fade-in px-4"
                             style={{ animationDelay: '0.2s' }}
                         >
@@ -42,7 +41,7 @@ const CTA: React.FC = () => {
                         </p>
 
                         {/* Enhanced Download Buttons with better responsive layout */}
-                        <div 
+                        <div
                             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-12 animate-fade-in px-4"
                             style={{ animationDelay: '0.4s' }}
                         >

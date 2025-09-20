@@ -1,4 +1,3 @@
-"use client"
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { BiMinus, BiPlus } from "react-icons/bi";
 
@@ -17,21 +16,21 @@ const FAQ: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="flex flex-col lg:flex-row gap-12 sm:gap-16 lg:gap-20">
                     {/* Left Column - Header with enhanced responsive design */}
-                    <div 
+                    <div
                         className="lg:w-2/5 animate-fade-in"
                     >
                         <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                             Frequently Asked{' '}
                             <span className="gradient-text-blue">Questions</span>
                         </h2>
-                        
+
                         <p className="lg:mt-6 sm:mt-8 text-foreground-accent text-center lg:text-left text-lg sm:text-xl leading-relaxed mb-6 sm:mb-8">
                             Ask us anything! We&apos;re here to help you get the most out of ChefFlow.
                         </p>
-                        
+
                         <div className="text-center lg:text-left">
-                            <a 
-                                href="mailto:contact@chefflowapp.net" 
+                            <a
+                                href="mailto:contact@chefflowapp.net"
                                 className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl lg:text-2xl text-primary font-bold hover:text-primary-dark transition-all duration-300 hover:scale-105 group"
                             >
                                 <span className="underline decoration-dotted underline-offset-4">
@@ -45,7 +44,7 @@ const FAQ: React.FC = () => {
                     </div>
 
                     {/* Right Column - FAQ Items with enhanced responsive design */}
-                    <div 
+                    <div
                         className="w-full lg:w-3/5 mx-auto bg-white/80 backdrop-blur-sm rounded-3xl shadow-modern border border-white/20 overflow-hidden animate-fade-in"
                         style={{ animationDelay: '0.2s' }}
                     >
@@ -64,10 +63,10 @@ const FAQ: React.FC = () => {
                                                 </span>
                                                 <div className="flex-shrink-0">
                                                     <div className={`transition-all duration-300 ${open ? 'rotate-180 scale-110' : 'rotate-0 scale-100'}`}>
-                                                        {open ? 
+                                                        {open ?
                                                             <div className="w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full flex items-center justify-center">
                                                                 <BiMinus className="w-3 h-3 sm:w-5 sm:h-5 text-white" />
-                                                            </div> : 
+                                                            </div> :
                                                             <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
                                                                 <BiPlus className="w-3 h-3 sm:w-5 sm:h-5 text-gray-600 group-hover:text-white transition-colors duration-300" />
                                                             </div>

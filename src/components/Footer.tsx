@@ -1,6 +1,4 @@
-import Link from 'next/link';
 import React from 'react';
-import Image from 'next/image';
 
 import { siteDetails } from '@/data/siteDetails';
 import { footerDetails } from '@/data/footer';
@@ -23,18 +21,18 @@ const Footer: React.FC = () => {
                         {/* Company Info with enhanced responsive design */}
                         <div className="lg:col-span-2 animate-fade-in">
                             <div className="hover:scale-105 transition-transform duration-300">
-                                <Link href="/" className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                                    <Image 
-                                        src="/images/logo.png" 
-                                        width={50} 
-                                        height={50} 
-                                        alt="ChefFlow logo" 
-                                        className="min-w-fit w-10 h-10 sm:w-12 sm:h-12 object-contain" 
+                                <a href="/" className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                                    <img
+                                        src="/images/logo.png"
+                                        width={50}
+                                        height={50}
+                                        alt="ChefFlow logo"
+                                        className="min-w-fit w-10 h-10 sm:w-12 sm:h-12 object-contain"
                                     />
                                     <h3 className="manrope text-xl sm:text-2xl font-bold cursor-pointer text-white">
                                         {siteDetails.siteName}
                                     </h3>
-                                </Link>
+                                </a>
                             </div>
                             <p className="text-blue-100 text-base sm:text-lg leading-relaxed max-w-md mb-6 sm:mb-8">
                                 {footerDetails.subheading}
@@ -47,8 +45,8 @@ const Footer: React.FC = () => {
                             <h4 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-white">Contact Us</h4>
 
                             {footerDetails.email && (
-                                <a 
-                                    href={`mailto:${footerDetails.email}`}  
+                                <a
+                                    href={`mailto:${footerDetails.email}`}
                                     className="block text-blue-100 hover:text-white transition-all duration-300 text-base sm:text-lg mb-3 sm:mb-4 font-medium hover:translate-x-2 group"
                                 >
                                     <span className="group-hover:text-primary transition-colors duration-300">
@@ -58,8 +56,8 @@ const Footer: React.FC = () => {
                             )}
 
                             {footerDetails.telephone && (
-                                <a 
-                                    href={`tel:${footerDetails.telephone}`} 
+                                <a
+                                    href={`tel:${footerDetails.telephone}`}
                                     className="block text-blue-100 hover:text-white transition-all duration-300 text-base sm:text-lg mb-4 sm:mb-6 font-medium hover:translate-x-2 group"
                                 >
                                     <span className="group-hover:text-primary transition-colors duration-300">
@@ -72,8 +70,8 @@ const Footer: React.FC = () => {
                             <div className="mt-6 sm:mt-8">
                                 <h5 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-white">Stay Updated</h5>
                                 <div className="flex gap-2">
-                                    <input 
-                                        type="email" 
+                                    <input
+                                        type="email"
                                         placeholder="Enter your email"
                                         className="flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300 backdrop-blur-sm text-sm sm:text-base"
                                     />
@@ -86,7 +84,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* Enhanced Bottom Section with better responsive design */}
-                    <div 
+                    <div
                         className="mt-12 sm:mt-16 lg:mt-20 pt-6 sm:pt-8 border-t border-gray-700/50 animate-fade-in"
                         style={{ animationDelay: '0.6s' }}
                     >
@@ -95,11 +93,11 @@ const Footer: React.FC = () => {
                                 Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.
                             </p>
                             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-xs sm:text-sm text-blue-200">
-                                <Link href="/privacy" className="hover:underline hover:text-white transition-colors duration-300">Privacy Policy</Link>
+                                <a href="/privacy" className="hover:underline hover:text-white transition-colors duration-300">Privacy Policy</a>
                                 <span className="hidden sm:block">•</span>
-                                <Link href="/terms" className="hover:underline hover:text-white transition-colors duration-300">Terms of Service</Link>
+                                <a href="/terms" className="hover:underline hover:text-white transition-colors duration-300">Terms of Service</a>
                                 <span className="hidden sm:block">•</span>
-                                <Link href="/cookies" className="hover:underline hover:text-white transition-colors duration-300">Cookie Policy</Link>
+                                <a href="/cookies" className="hover:underline hover:text-white transition-colors duration-300">Cookie Policy</a>
                             </div>
                         </div>
                     </div>
