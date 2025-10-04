@@ -9,7 +9,6 @@ const Home: React.FC = () => {
     return (
         <>
             <Hero />
-            {/* Benefits section removed - it shows phone images */}
             <Testimonials />
             <FAQ />
             <Stats />

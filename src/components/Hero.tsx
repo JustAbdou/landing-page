@@ -4,11 +4,26 @@ import { FaStar } from 'react-icons/fa';
 
 import AppStoreButton from './AppStoreButton';
 import PlayStoreButton from './PlayStoreButton';
+import ImageSlider from './ImageSlider';
 
 import { heroDetails } from '@/data/hero';
 
 const Hero: React.FC = () => {
     const featuresRef = useRef<HTMLDivElement>(null);
+    
+    // Array of app screenshot images - Dashboard first, then other features
+    const appImages = [
+        '/images/Dashboard.jpg', // 1st
+        '/images/Simulator Screenshot - iPhone 16 Plus - 2025-10-04 at 15.54.49.png', // 2nd
+        '/images/Simulator Screenshot - iPhone 16 Plus - 2025-10-04 at 15.55.33.png', // 3rd
+        '/images/Simulator Screenshot - iPhone 16 Plus - 2025-10-04 at 14.57.41.png', // 4th
+        '/images/Simulator Screenshot - iPhone 16 Plus - 2025-10-04 at 14.57.59.png', // 5th
+        '/images/Simulator Screenshot - iPhone 16 Plus - 2025-10-04 at 14.58.40.png', // 6th
+        '/images/Simulator Screenshot - iPhone 16 Plus - 2025-10-04 at 14.58.24.png', // 7th
+        '/images/Simulator Screenshot - iPhone 16 Plus - 2025-10-04 at 14.59.47.png', // rest
+        '/images/Simulator Screenshot - iPhone 16 Plus - 2025-10-04 at 15.00.12.png', // rest
+        '/images/Simulator Screenshot - iPhone 16 Plus - 2025-10-04 at 15.56.47.png', // rest
+    ];
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -102,16 +117,13 @@ const Hero: React.FC = () => {
 
             {/* Mobile-first layout for features and image */}
             <div className="mt-12 sm:mt-16 lg:mt-20 flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-12 lg:gap-16 relative z-10 px-4 sm:px-6 lg:px-8">
-                {/* Mobile: Image first, then text */}
+                {/* Mobile: Image slider first, then text */}
                 <div className="lg:hidden w-full flex justify-center mb-8">
                     <div className="animate-fade-in w-full max-w-[280px] sm:max-w-[320px]">
                         <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-3 shadow-modern-lg border-4 border-gray-300 inline-block transform hover:scale-105 transition-transform duration-300 w-full">
-                            <img
-                                src={heroDetails.centerImageSrc}
-                                width={280}
-                                height={210}
-                                alt="ChefFlow app screenshot"
-                                className="rounded-2xl w-full h-auto"
+                            <ImageSlider 
+                                images={appImages}
+                                className="rounded-2xl"
                             />
                         </div>
                     </div>
@@ -186,18 +198,15 @@ const Hero: React.FC = () => {
                     </ul>
 
                 </div>
-                {/* Desktop: Image on the right */}
+                {/* Desktop: Image slider on the right */}
                 <div
                     className="hidden lg:block mt-8 sm:mt-12 lg:mt-0 animate-fade-in w-full max-w-[250px]"
                     style={{ animationDelay: '1s' }}
                 >
                     <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-3 shadow-modern-lg border-4 border-gray-300 inline-block transform hover:scale-105 transition-transform duration-300 w-full">
-                        <img
-                            src={heroDetails.centerImageSrc}
-                            width={250}
-                            height={188}
-                            alt="ChefFlow app screenshot"
-                            className="rounded-2xl w-full h-auto"
+                        <ImageSlider 
+                            images={appImages}
+                            className="rounded-2xl"
                         />
                     </div>
                 </div>
